@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    color: black;
+    background-color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.preferences-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #444;
+    font-weight: 600;
+}
+
+select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* Theme Styles */
+body.light {
+    background-color: #fff;
+    color: #333;
+}
+
+body.dark {
+    background-color: #333;
+    color: #eaeaea;
+}
+
+body.darkgreen {
+    background-color: #2b3d2f;
+    color: #c1d3b7;
+}
+
+/* List Styles */
+ul.bullet {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+ul.checkmark {
+    list-style-type: none;
+}
+
+ul.checkmark li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #000000;
+}
+
+ul.roman {
+    list-style-type: upper-roman;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .preferences-panel {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    select {
+        width: 100%;
+    }
+}
