@@ -4,7 +4,7 @@ const listStyleSelect = document.getElementById('list-style-select');
 const dynamicList = document.getElementById('dynamic-list');
 
 // Items for the dynamic list
-const listItems = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+const listItems = ['Jasmeet Kaur', 'Parmeet Kaur', 'Palvinder singh', 'Kawaljeet Kaur', 'Jasjeet Singh'];
 
 // Set default preferences if not in localStorage
 document.addEventListener('DOMContentLoaded', () => {
